@@ -4,7 +4,7 @@ import uvicorn
 
 app = FastAPI()
 
-app.route("/")
+@app.get("/test")
 def h():
     return {
         "hellow":"world"
